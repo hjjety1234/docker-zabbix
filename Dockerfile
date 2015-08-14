@@ -5,7 +5,7 @@ MAINTAINER Bernardo Gomez Palacio <bernardo.gomezpalacio@gmail.com>
 ENV REFRESHED_AT 2015-03-19
 
 # set timezone
-cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 # Install EPEL to have MySQL packages.
 RUN yum install -y http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
